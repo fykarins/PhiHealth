@@ -1,0 +1,62 @@
+<resources>
+    <!-- App Info -->
+    <string name="app_name">PHI Health</string>
+    <string name="app_title">PHI HEALTH</string>
+
+    <!-- Menu Items -->
+    <string name="hospital">Hospital</string>
+    <string name="konsultasi">Konsultasi</string>
+    <string name="location">Location</string>
+    <string name="more">More</string>
+
+    <!-- Action Buttons -->
+    <string name="kembali">Kembali</string>
+    <string name="konsultasisekarang">Konsultasi Sekarang</string>
+    <string name="logout">Logout</string>
+    <string name="register">Register</string>
+    <string name="register_now">Register Now</string>
+    <string name="simpandata">Simpan Data</string>
+
+    <!-- Form Fields -->
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="nama_belakang">Nama Belakang</string>
+    <string name="nama_depan">Nama Depan</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+
+    <!-- Labels -->
+    <string name="profile">Profile</string>
+    <string name="history">History</string>
+    <string name="weight">Weight</string>
+    <string name="systolic">Systolic</string>
+    <string name="diastolic">Diastolic</string>
+    <string name="pulse">Pulse</string>
+
+    <!-- Units -->
+    <string name="kg">Kg</string>
+    <string name="bpm">BPM</string>
+    <string name="mg_dl">mg/dL</string>
+
+    <!-- Login/Register Text -->
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_account">Dont have account?</string>
+    <string name="atau_login_dengan">Atau Login Dengan</string>
+    <string name="ketentuan_layanan">Ketentuan layanan</string>
+    <string name="kebijakan_privasi">Kebijakan Privasi</string>
+    <string name="ketentuan_layanan_privasi">Dengan mendaftar, anda setuju dengan ketentuan layanan dan kebijakan privasi</string>
+
+    <!-- Sample Data -->
+    <string name="_04_01_2025">04 - 01 - 2025</string>
+    <string name="_53">53</string>
+    <string name="_211">211</string>
+    <string name="_78">78</string>
+    <string name="_66">66</string>
+
+    <!-- Static Descriptions -->
+    <string name="hapus">Hapus</string>
+    <string name="berat_badan_53_kg">Berat Badan: 53 Kg</string>
+    <string name="tekanan_darah_202_71_mg_dl">Tekanan Darah: 202/71 mg/dL</string>/>
+</resources>
