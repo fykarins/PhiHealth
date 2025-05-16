@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="konsultasi">Konsultasi</string>
+    <string name="hospital">Hospital</string>
+    <string name="location">Location</string>
+    <string name="more">More</string>
+    <string name="konsultasi_sekarang">Konsultasi Sekarang</string>
+    <string name="weight">Weight</string>
+    <string name="_53_kg">53 Kg</string>
+    <string name="systolic_211">Systolic 211</string>
+    <string name="diastolic_78">Diastolic 78</string>
+    <string name="pulse_66">Pulse 66</string>
+    <string name="konsultasisekarang">Konsultasi Sekarang\n</string>
+    <string name="_211">211</string>
+    <string name="mg_dl">mg/dL</string>
+</resources>

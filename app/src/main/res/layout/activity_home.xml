@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/app_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_title"
+                android:textColor="#2F6FF2"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/profile_button"
+                android:layout_width="38dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/circle_bg"
+                android:contentDescription="@string/profile"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_user" />
+
+            <ImageButton
+                android:id="@+id/history_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@id/profile_button"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/history"
+                android:src="@drawable/ic_history"
+                app:tint="#2979FF" />
+
+            <ImageButton
+                android:id="@+id/logout_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="-8dp"
+                android:layout_toStartOf="@id/history_button"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/logout"
+                android:src="@drawable/ic_logout"
+                app:tint="#2979FF" />
+        </RelativeLayout>
+
+        <!-- Search -->
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/search_bg"
+            android:queryHint="Search" />
+
+        <!-- Doctor Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_doctor"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_round" />
+
+        <!-- Menu Icons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:background="@drawable/bg_card"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:clipToPadding="false">
+
+            <!-- Item 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_message" />
+
+                <TextView
+                    android:text="@string/konsultasi"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Item 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_hospital" />
+
+                <TextView
+                    android:text="@string/hospital"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Item 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_location" />
+
+                <TextView
+                    android:text="@string/location"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Item 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_more" />
+
+                <TextView
+                    android:text="@string/more"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Konsultasi Sekarang -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_card"
+            android:elevation="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_doctor1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="23dp"
+                android:layout_weight="1"
+                android:text="@string/konsultasisekarang"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_arrowright" />
+        </LinearLayout>
+
+        <!-- Card Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!-- Berat Badan -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_card"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_weightscale"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weight"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_53"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:textColor="#2F6FF2"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kg"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/simpandata"
+                    android:textSize="12sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <!-- Tekanan Darah -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_card"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_heartrate"
+                    android:layout_gravity="center" />
+
+                <!-- Label Tekanan Darah -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Pressure"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp" />
+
+                <!-- Nilai tekanan darah -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="211 / 78"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:textColor="#2F6FF2"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp" />
+
+                <!-- Satuan -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mmHg"
+                    android:layout_gravity="center" />
+
+                <!-- Denyut Nadi -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pulse: 66 BPM"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp" />
+
+                <!-- Tombol -->
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/simpandata"
+                    android:textSize="12sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
