@@ -240,9 +240,10 @@
                     android:layout_marginTop="8dp" />
 
                 <TextView
+                    android:id="@+id/text_weight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/_53"
+                    android:text="0"
                     android:textStyle="bold"
                     android:textSize="24sp"
                     android:textColor="#2F6FF2"
@@ -291,9 +292,10 @@
 
                 <!-- Nilai tekanan darah -->
                 <TextView
+                    android:id="@+id/text_bp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="211 / 78"
+                    android:text="0 / 0"
                     android:textStyle="bold"
                     android:textSize="24sp"
                     android:textColor="#2F6FF2"
@@ -309,9 +311,10 @@
 
                 <!-- Denyut Nadi -->
                 <TextView
+                    android:id="@+id/text_pulse"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pulse: 66 BPM"
+                    android:text="Pulse: 0 BPM"
                     android:textStyle="bold"
                     android:layout_gravity="center"
                     android:layout_marginTop="4dp" />
