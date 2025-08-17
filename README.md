@@ -45,7 +45,7 @@ The measurement process follows these steps:
 6. Data is processed, sent to the server, and stored in the database.  
 7. Measurement results are displayed on the **LCD** and sent to the **Android application**.
 
-![Flowchart](assets/flowchart.png)
+![Flowchart](assets/flowchart)
 
 ---
 
