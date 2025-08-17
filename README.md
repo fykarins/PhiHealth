@@ -26,7 +26,7 @@ The system consists of two main components:
 
 The block diagram illustrates the flow of **input, process, and output** in the system:
 
-![Block Diagram](assets/block_diagram.jpg)
+![Block Diagram](assets/block_diagram.png)
 
 ---
 
@@ -45,7 +45,7 @@ The measurement process follows these steps:
 6. Data is processed, sent to the server, and stored in the database.  
 7. Measurement results are displayed on the **LCD** and sent to the **Android application**.
 
-![Flowchart](assets/flowchart.jpg)
+![Flowchart](assets/flowchart.png)
 
 ---
 
@@ -79,6 +79,6 @@ Below are 6 screenshots of the Android application:
 - **Software:** Arduino IDE (ESP32), Android Studio (Kotlin), Firebase/MySQL (database)  
 - **Communication:** Wi-Fi (ESP32 → Server → Android App)  
 
-![Fritzing Diagram](assets/block_diagram.jpg)
+![Fritzing Diagram](assets/fritzing.jpg)
 ---
 
